@@ -1,0 +1,75 @@
+Startpoint: op[0] (input port clocked by MYCLK)
+Endpoint: _516_ (rising edge-triggered flip-flop clocked by MYCLK)
+Path Group: MYCLK
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock MYCLK (rise edge)
+   2.00    2.00   clock network delay (ideal)
+   1.00    3.00 ^ input external delay
+   0.00    3.00 ^ op[0] (in)
+   0.08    3.08 v _438_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.06    3.14 ^ _439_/Y (sky130_fd_sc_hd__nor2_1)
+   0.00    3.14 ^ _516_/D (sky130_fd_sc_hd__dfxtp_1)
+           3.14   data arrival time
+
+   0.00    0.00   clock MYCLK (rise edge)
+   2.00    2.00   clock network delay (ideal)
+   0.10    2.10   clock uncertainty
+   0.00    2.10   clock reconvergence pessimism
+           2.10 ^ _516_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.04    2.06   library hold time
+           2.06   data required time
+---------------------------------------------------------
+           2.06   data required time
+          -3.14   data arrival time
+---------------------------------------------------------
+           1.08   slack (MET)
+
+
+Startpoint: a[2] (input port clocked by MYCLK)
+Endpoint: _521_ (rising edge-triggered flip-flop clocked by MYCLK)
+Path Group: MYCLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock MYCLK (rise edge)
+   2.00    2.00   clock network delay (ideal)
+   3.00    5.00 v input external delay
+   0.00    5.00 v a[2] (in)
+   0.20    5.20 ^ _442_/Y (sky130_fd_sc_hd__nand2_1)
+   0.44    5.65 v _468_/X (sky130_fd_sc_hd__xor3_1)
+   0.39    6.03 v _479_/X (sky130_fd_sc_hd__maj3_1)
+   0.21    6.25 ^ _488_/X (sky130_fd_sc_hd__xor2_1)
+   0.12    6.36 v _495_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.37    6.73 v _505_/X (sky130_fd_sc_hd__maj3_1)
+   0.11    6.84 ^ _509_/Y (sky130_fd_sc_hd__nor2_1)
+   0.11    6.95 ^ _511_/Y (sky130_fd_sc_hd__nand3b_1)
+   0.06    7.01 v _512_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.00    7.01 v _521_/D (sky130_fd_sc_hd__dfxtp_1)
+           7.01   data arrival time
+
+  10.00   10.00   clock MYCLK (rise edge)
+   2.00   12.00   clock network delay (ideal)
+  -0.50   11.50   clock uncertainty
+   0.00   11.50   clock reconvergence pessimism
+          11.50 ^ _521_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.13   11.37   library setup time
+          11.37   data required time
+---------------------------------------------------------
+          11.37   data required time
+          -7.01   data arrival time
+---------------------------------------------------------
+           4.36   slack (MET)
+
+
+max_transition
+
+Pin _515_/Q ^
+max_transition     1.50
+transition_time    3.68
+-----------------------
+Slack             -2.18 (VIOLATED)
+
