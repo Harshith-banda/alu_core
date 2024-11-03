@@ -1,23 +1,10 @@
-# alu_core
+![image](https://github.com/user-attachments/assets/b72a069d-06af-42a5-be9e-4efc89659d66)# alu_core
 
 ### alu design and testbench
 
 ![iverilog sim](https://user-images.githubusercontent.com/112769624/236661360-f3b70813-89fc-41de-87fb-a54129a675ae.png)
 
-*Presequisites*
-```
-$ sudo apt install vim-gtk3
-```
-*commands*
-```
-$ gvim alu_core.v tb_alu_core.v
-$ gedit alu_core.v tb_alu_core.v
-$ iverilog alu_core.v tb_alu_core.v
-$ ls
-$ ./a.out
-$ gtkwave tb_good_mux.v
-
-```
+## Code
 *alu design*
 ```
 module alu_core (input [3:0] a, input [3:0] b, input clk, input rst, input [1:0] op, output reg [7:0] result);
@@ -121,17 +108,23 @@ end
 
 endmodule
 ```
+## RTL simulation 
+*commands*
+```
+$ gvim alu_core.v tb_alu_core.v
+$ gedit alu_core.v tb_alu_core.v
+$ iverilog alu_core.v tb_alu_core.v
+$ ls
+$ ./a.out
+$ gtkwave tb_good_mux.v
+
+```
 *gtkwave output*
 
 ![alu_core](https://github.com/user-attachments/assets/d022835e-0424-4f7c-8d23-47c276a19cbc)
 ![waveform2](https://github.com/user-attachments/assets/875cfd15-d9da-4c3a-b7fc-05404892669e)
 
-
-### alu synthesis to gatelevel netlist
-
-*yosys flow*
-![yosys_flow](https://user-images.githubusercontent.com/112769624/236665087-54638e48-cd2e-4f09-bc2e-1b81182186b0.png)
-
+## RTL synthesis
 
 *commands for synthesis*
 
@@ -144,12 +137,39 @@ yosys> show
 ```
 ![Screenshot from 2024-11-03 15-18-11](https://github.com/user-attachments/assets/1d37d0f8-e438-4d9c-9451-97f5a64a2760)
 
-*abc results*
+## Synthesis
 
+![synth_alu_core](https://github.com/user-attachments/assets/77554b91-3fed-42ff-afa8-fd74be1583f4)
+![synth_alu_core2](https://github.com/user-attachments/assets/6da214a6-ad29-42a7-b695-2eb7fa7ba0d2)
 
+## DFFLIBMAP results
 
+![DFFLIBMAP](https://github.com/user-attachments/assets/9df4d689-3633-4952-b302-0bda301549a6)
 
+## ABC results 
 
+![abc](https://github.com/user-attachments/assets/4a4fdabf-f408-4cde-915c-8ebfaedbe782)
+
+## NETLIST
+
+![image](https://github.com/user-attachments/assets/3a9d78c6-37dc-4843-95ec-70ca3b73472a)
+
+## NETLIST simulation 
+
+![netlist_waveform](https://github.com/user-attachments/assets/32611589-d62f-4cce-bf54-c40da20237e1)
+
+**NOTE :** _RTL Simulation is the same as Netlist Simulation_
+
+## STA analasys
+
+![alu_slack](https://github.com/user-attachments/assets/2aaa5b32-5558-4ea1-aea8-621e1c4be368)
+
+~~~
+Library used : sky130_fd_sc_hd__tt_025C_1v80
+Wost Slack : 4.36
+
+Clock Frequency : 177.304965 MHz
+~~~
 
 
 
