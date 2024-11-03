@@ -208,7 +208,13 @@ end
 endmodule
 ```
 *gtkwave output*
-![waveform1](https://github.com/user-attachments/assets/3096ddd0-46d6-4346-803d-8a106b0c34f1)
+
+![alu_core](https://github.com/user-attachments/assets/d022835e-0424-4f7c-8d23-47c276a19cbc)
+![waveform2](https://github.com/user-attachments/assets/875cfd15-d9da-4c3a-b7fc-05404892669e)
+
+
+
+
 
 
 
