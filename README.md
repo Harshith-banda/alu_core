@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b72a069d-06af-42a5-be9e-4efc89659d66)# alu_core
+# alu_core
 
 ### alu design and testbench
 
