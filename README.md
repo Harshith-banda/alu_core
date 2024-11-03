@@ -1,9 +1,5 @@
 # alu_core
 
-### alu design and testbench
-
-![iverilog sim](https://user-images.githubusercontent.com/112769624/236661360-f3b70813-89fc-41de-87fb-a54129a675ae.png)
-
 ## Code
 *alu design*
 ```
