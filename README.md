@@ -49,9 +49,9 @@ $ gtkwave alu_testbench.vcd
 
 ```
 yosys> read_liberty -lib /lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-yosys> read_verilog good_mux.v
-yosys> synth -top good_mux 
-yosys> abc -liberty /home/knightmare/vlsi/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> read_verilog alu_core.v
+yosys> synth -top alu_core 
+yosys> abc -liberty /lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 yosys> show
 ```
 ![Screenshot from 2024-11-03 15-18-11](https://github.com/user-attachments/assets/1d37d0f8-e438-4d9c-9451-97f5a64a2760)
