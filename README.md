@@ -34,7 +34,7 @@ $ gedit alu_core.v tb_alu_core.v
 $ iverilog alu_core.v tb_alu_core.v
 $ ls
 $ ./a.out
-$ gtkwave tb_good_mux.v
+$ gtkwave alu_testbench.vcd
 
 ```
 *gtkwave output*
