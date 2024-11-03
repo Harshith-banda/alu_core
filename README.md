@@ -40,7 +40,8 @@ $ gtkwave tb_good_mux.v
 *gtkwave output*
 
 ![alu_core](https://github.com/user-attachments/assets/d022835e-0424-4f7c-8d23-47c276a19cbc)
-![waveform2](https://github.com/user-attachments/assets/875cfd15-d9da-4c3a-b7fc-05404892669e)
+![waveform1](https://github.com/user-attachments/assets/1ee819b7-3f05-4684-821a-55c5bb5a1b8f)
+
 
 ## RTL synthesis
 
